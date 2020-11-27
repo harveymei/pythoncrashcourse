@@ -1,3 +1,11 @@
+#!/usr/bin/env python
+# -*- coding:utf-8 -*-
+# @Time    : ${DATE} ${TIME}
+# @Author  : Harvey Mei <harvey.mei@msn.com>
+# @FileName: ${NAME}.py
+# @IDE     : ${PRODUCT_NAME}
+# @GitHub  ：https://github.com/harveymei/
+
 # 第5章
 # 检查是否不相等
 requested_topping = 'mushrooms'
