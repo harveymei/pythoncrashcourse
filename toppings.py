@@ -107,4 +107,4 @@ elif age >= 65:
 
 print("Your new admission cost is $" + str(price) + ".")
 
-# 5.3.6 测试过个条件
+# 5.3.6 测试多个条件
