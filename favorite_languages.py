@@ -48,6 +48,6 @@ for name in favorite_languages.keys():  # 使用for循环遍历字典中的键�
     if name in friends:  # 判断，姓名在朋友列表中则打印包含该首字母大写姓名和兴趣语言的消息
         print(" Hi " + name.title() +
               ", I see your favorite language is " +
-              favorite_languages[name].title() + "!")  # 打印字典中对应name对应的首字母大写language
+              favorite_languages[name].title() + "!")  # 打印字典中name对应的首字母大写language
 
 
