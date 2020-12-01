@@ -65,3 +65,36 @@ make_pizza('pepperoni')
 make_pizza('mushrooms', 'green peppers', 'extra cheese')
 
 
+# 混合使用位置参数和任意参数
+# Mixing Positional and Arbitrary Arguments
+def make_pizza(size, *toppings):  # 定义函数，指定一个位置参参数和一个任意参数
+    """Summarize the pizza we are about to make."""
+    print("\nMaking a " + str(size) +
+          "-inch pizza with the following toppings:")  # 将传入的数值参数转换为字符串并拼接字符串
+    for topping in toppings:  # 遍历任意参数构成的元组并赋值变量
+        print("- " + topping)  # 依次打印变量信息
+
+
+make_pizza(16, 'pepperoni')  # 调用函数，传入位置参数和一个任意参数
+make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')  # 调用函数，传入位置参数和三个任意参数
+
+
+# 使用任意关键字实参
+# Using Arbitrary Keyword Arguments
+def build_profile(first, last, **user_info):  # 使用两个**号构建一个名为user_info的空字典
+    """Build a dictionary containing everything we know about a user."""
+    profile = {}  # 定义一个空字典
+    profile['first_name'] = first  # 向字典写入键值对
+    profile['last_name'] = last  # 向字典写入第二个键值对
+    for key, value in user_info.items():  # 遍历传入任意实参字典user_info的键值对并赋值给变量
+        profile[key] = value  # 依次将变量键值对写入字典profile
+    return profile  # 返回字典
+
+# 调用函数，传入两个位置参数和部分任意参数，将返回后的字典赋值给变量
+user_profile = build_profile('albert', 'einstein',
+                             location='princeton',
+                             field='physics')
+
+print(user_profile)  # 打印变量
+
+
