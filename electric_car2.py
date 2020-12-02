@@ -53,7 +53,7 @@ class Battery():  # 定义一个电池类，在子类ElectricCar()中调用该�
 
 class ElectricCar(Car):
     def __init__(self, make, model, year):
-        super().__init__(make, model, year)
+        super().__init__(make, model, year)  # 使用super()函数调用父类的方法
         self.battery = Battery()  # 新增属性，类Battery()实例化时未指定参数，则使用默认参数
 
 
